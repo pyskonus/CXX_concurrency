@@ -29,5 +29,6 @@ int main() {
     std::cout << "ok1" << std::endl;
     scoped_thread t(std::thread{f});
     std::cout << "ok2" << std::endl;
+    std::cout << std::thread::hardware_concurrency() << std::endl;
     return 0;
 }
